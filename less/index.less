@@ -1,0 +1,840 @@
+@v : 7.5vw;
+.wh(@w,@h){
+    width: @w/@v;
+    height: @h/@v;
+};
+.dn {
+    display: none !important;
+}
+.dnb {
+    display: block !important;
+    opacity: 1 !important;
+}
+
+html,
+body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.page-stage {
+    width: 100%;
+    height: 100%;
+}
+.page-load {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url("../img/p1_bg1.jpg") no-repeat;
+    background-size: 100% 100%;
+    overflow: hidden;
+    z-index: 999;
+    img {
+        width: 100%;
+    }
+    >div[class^="cloud"]{
+        position: absolute;
+        .wh(622,308);
+    }
+    .cloud1 {
+        left: -196/@v;
+        top: 278/@v;
+        animation: cloudMove2 20s linear  infinite both;
+    }
+    .cloud2 {
+        left: 284/@v;
+        top: -134/@v;
+        animation: cloudMove1 20s linear 4s infinite both;
+    }
+    .cloud3 {
+        left: 260/@v;
+        top: -134/@v;
+        animation: cloudMove2 15s linear infinite both;
+    }
+    .cloud4 {
+        left: 537/@v;
+        top: 587/@v;
+        animation: cloudMove2 20s  linear infinite both;
+    }
+    .cloud5 {
+        left: -96/@v;
+        bottom: -134/@v;
+        animation: cloudMove1 20s linear infinite both;
+    }
+    .progress {
+        position: absolute;
+        left: 50%;
+        top: 904/@v;
+        transform: translateX(-50%);
+        font-size: 28/@v;
+        font-weight: bold;
+        text-align: center;
+    }
+    .marroon {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 208/@v;
+        .fire {
+            .wh(230,580);
+        }
+    }
+}
+img {
+    width: 100%;
+}
+//第一页
+.page-one {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    .fireworks-box {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        div {
+            position: absolute;
+        }
+        .fireworks1 {
+            left: -200/@v;
+            top: 0/@v;
+            .wh(707,731);
+            
+        }
+        .fireworks2 {
+            right: -100/@v;
+            top: 0/@v;
+            .wh(436,451);
+        }
+        .fireworks3 {
+            .wh(376,789);
+        }
+    }
+    .one-bg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: url("../img/p1_bg1.jpg") no-repeat;
+        background-size: 100% 100%;
+        div[class^="cloud"]{
+            position: absolute;
+            .wh(622,308);
+        }
+        .cloud1 {
+            left: -196/@v;
+            top: 278/@v;
+            animation: cloudMove2 20s linear  infinite both;
+        }
+        .cloud2 {
+            left: 284/@v;
+            top: -134/@v;
+            animation: cloudMove1 20s linear 4s infinite both;
+        }
+        .cloud3 {
+            left: 260/@v;
+            top: -134/@v;
+            animation: cloudMove2 15s linear infinite both;
+        }
+        .cloud4 {
+            left: 537/@v;
+            top: 587/@v;
+            animation: cloudMove2 20s  linear infinite both;
+        }
+        .cloud5 {
+            left: -96/@v;
+            bottom: -134/@v;
+            animation: cloudMove1 20s linear infinite both;
+        }
+    }
+   
+}
+.page-two {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    // overflow: hidden;
+    transform: scale(1.45);
+    transform-origin: (622/2+380)/@v (1039/2-410)/@v;
+    .page-two-bg {
+        opacity: 0;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        img {
+            height: 100%;
+        }
+    }
+    .p2_2 {
+        position: absolute;
+        width: 559/@v;
+        height: 498/@v;
+        top: 500/@v;
+        left: -135/@v;
+        z-index: 4;
+    }
+    .one-content {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        
+        .timepiece {
+            position: absolute;
+            left: 160/@v;
+            top: -140/@v;
+            transform: scale(0.6);
+            z-index: 3;
+            .belfry {
+                .wh(622,1039);
+                img{
+                    width: 100%;
+                }
+            }
+            .minute {
+                position: absolute;
+                left: 50%;
+                top: 438/@v;
+                margin-left: -(65*90/61-18)/@v;
+                .wh(65*90/61,59*90/61);
+                transform: rotateZ(49deg);
+                transform-origin: right bottom;
+            }
+            .hour {
+                position: absolute;
+                left: 50%;
+                top: 504/@v;
+                margin-left: -(49*90/61/2-43)/@v;
+                .wh(49*90/61,51*90/61);
+                transform: rotateZ(225deg);
+                transform-origin: 8px 10px;
+            }
+            .pendulum {
+                position: absolute;
+                left: 50%;
+                top: 676/@v;
+                margin-left: -(66*90/61/2-15)/@v;
+                .wh(66*90/61,140*90/61);
+                transform-origin: 8px 10px;
+            }
+            .bowling {
+                position: absolute;
+                left: 50%;
+                top: 410/@v;
+                margin-left: -(218/2-16)/@v;
+                .wh(218,265);
+            }
+        }
+    }
+}
+.page-three {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transform-origin: 100/@v 300/@v;
+    transform: scale(0.25);
+    opacity: 0;
+    .page-three-bg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        img {
+            height: 100%;
+        }
+    }
+    .three-content {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        .p2_bg1 {
+            position: absolute;
+            left: 0;
+            top: 162/@v;
+            width: 100%;
+            height: 822/@v;
+        }
+        .p2_body-content {
+            position: absolute;
+            left: 0;
+            top: 162/@v;
+            width: 100%;
+            height: 822/@v;
+            overflow: hidden;
+            .p2_body {
+                position: absolute;
+                left: 50%;
+                bottom : -10/@v;
+                .wh(365,742);
+                margin-left: -365/2/@v;
+            }
+            .p2_left {
+                position: absolute;
+                .wh(220,86);
+                left: 197/@v;
+                top: 440/@v;
+            }
+            .p2_right {
+                position: absolute;
+                .wh(190,88);
+                left: 365/@v;
+                top: 390/@v;
+            }
+        }
+        .calendar {
+            position: absolute;
+            .wh(174*3,88*3);
+            left: 50%;
+            margin-left: -174/2*3/@v;
+            top: 940/@v;
+        }
+    }
+    .three_p1_tips {
+        position: absolute;
+        left: 50%;
+        margin-left: -218*3/2/@v;
+        top: 285/@v;
+        width: 218*3/@v;
+        height: 265*3/@v;
+    }
+}
+.page4-page5-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 20;
+}
+.page-six {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    height: 1448/@v;
+    overflow: hidden;
+    z-index: 1;
+    .page-six-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        img {
+            position: absolute;
+        }
+        
+    }
+    .p5_1 {
+        position: absolute;
+        .wh(423,341);
+        top : 110/@v;
+        left : 111/@v;
+        overflow: hidden;
+        z-index: 3;
+        .p5_1-bg {
+            position: absolute;
+            left: 0;
+            top : 0;
+            width : 100%;
+            height : 100%;
+            z-index: 2;
+        }
+        .p5_2 {
+            position : absolute;
+            .wh(335,212);
+            left: 13/@v;
+            top  : 85/@v;
+            z-index: 1;
+        }
+    }
+}
+.page-seven-box {
+    position: absolute;
+    .wh(330,230);
+    left : 100/@v;
+    top : 190/@v;
+    z-index: 2;
+    overflow: hidden;
+    transform: rotate(-6deg);
+}
+.page-seven {
+    position: absolute;
+    width : 750/@v;
+    height : 1448/@v;
+    left: 0;
+    // top : 50%;
+    // margin-top: -1334/2/@v;
+    transform: scale(0.35);
+    transform-origin: 110/@v -50/@v;
+    .p5_bg2 {
+        position: relative;
+        width : 100%;
+        height : 100%;
+
+    }
+    .seven-figure {
+        position: absolute;
+        left: 50%;
+        top: 313/@v;
+        margin-left: -278/2/@v;
+        
+        .p5_5 {
+            position: absolute;
+            .wh(278,813);
+        }
+        .p5_4 {
+            position: absolute;
+            .wh(174,204);
+            top : 136/@v;
+            left: -1/@v;
+        }
+        .p5_6 {
+            position: absolute;
+            .wh(249,299);
+            left : 115/@v;
+            top: -60/@v;
+        }
+        .p5_7 {
+            position: absolute;
+            .wh(252,255);
+            left : 230/@v;
+            top : -250/@v;
+        }
+    }
+}
+.photograph {
+    position: absolute;
+    top : 925/@v;
+    left : -100%;
+    .wh(603,367);
+    z-index: 99;
+}
+.source {
+    position: absolute;
+    top : 0;
+    left : 0;
+    width : 100%;
+    height : 100%;
+    background-color: #373e29;
+    .p6_bg {
+        position: absolute;
+        .wh(750,1448);
+        left : 0;
+        top : 0;
+    }
+    .p6_1 {
+        position: absolute;
+        .wh(326,492);
+        top : 500/@v;
+        left : 0;
+    }
+    .p6_8 {
+        position: absolute;
+        .wh(426,138);
+        bottom : 0;
+        left : 47/@v;
+    }
+    //人物赵丽蓉
+    .movie {
+        position: absolute;
+        left: 132/@v;
+        top : 132/@v;
+        .wh(630,456);
+        .p6_4 {
+            position: absolute;
+            .wh(630,456);
+        }
+        .p6_5 {
+            position: absolute;
+            .wh(211,339);
+            left : 50%;
+            bottom : 12/@v;
+            margin-left: -211/2/@v;
+        }
+        .p6_6 {
+            position : absolute;
+            .wh(243,263);
+            top : 121/@v;
+            left : 95/@v;
+        }
+        .p6_7 {
+            position : absolute;
+            .wh(247,170);
+            top : 245/@v;
+            left : 325/@v;
+        }
+    }
+    //大哥大
+    .cellular-phone {
+        position: absolute;
+        bottom : -100/@v;
+        left : 50%;
+        margin-left : -789/2/@v;
+        .wh(789,474);
+        z-index: 10;
+        img {
+            position : absolute;
+            left : 0;
+            top : 0;
+        }
+    }
+    .p8_1 {
+        position : absolute;
+        z-index: 10;
+        transform-origin: center center;
+        transform: scale(5);
+        opacity: 0;
+    }
+}
+.yesterday {
+    display : none;
+    position : absolute;
+    width :100%;
+    height : 100%;
+    background-color: #7e6c5e;
+    .yesterday-bg {
+        position : absolute;
+        width : 100%;
+        height :100%;
+    }
+    .conversation{
+        position : absolute;
+        width :100%;
+        height :100%;
+        .p7_2 {
+            position : absolute;
+            top : 750/@v;
+            left : 60/@v;
+            .wh(407,322);
+        }
+        .p7_5 {
+            position : absolute;
+            .wh(96,104);
+            left : 270/@v;
+            top : 298/@v;
+        }
+        .p7_6 {
+            position : absolute;
+            .wh(155,85);
+            left : 360/@v;
+            top : 392/@v;
+        }
+    }
+    .standard {
+        position : absolute;
+        .wh(338,489);
+        right : 50/@v;
+        bottom : 10/@v; 
+        .p7_1 {
+            position: absolute;
+            width : 100%;
+            height : 100%;
+        }
+        .p7_font {
+            position: absolute;
+            .wh(253,430);
+            left: 50%;
+            margin-left : -253/2/@v;
+            top : 25/@v;
+        }
+    }
+   
+}
+//白画布
+.white-light-box {
+    position: absolute;
+    left : 0;
+    top: 837/@v;
+    .white-light-begin {
+        position : absolute;
+        top : 0;
+        .wh(708,496);
+        z-index: 99;
+        transform-origin: center bottom;
+    }
+    .white-light{
+        position: absolute;
+        top : 0;
+        .wh(750,837);
+        z-index: 99;
+        transform-origin: center bottom;
+    }
+}
+//青蛙
+.cloud {
+    position : absolute;
+    width : 100%;
+    height : 100%;
+    .fog_over {
+        position : absolute;
+        bottom : 0;
+        transform:  scale(5);
+        .wh(750,837);
+        img {
+            position : absolute;
+            &:last-of-type {
+                left: 100/@v;
+            }
+        }
+    }
+    .p7_change {
+        position : absolute;
+        right : -289*2/@v;
+        bottom : 0;
+        .wh(289,262);
+    }
+}
+//红旗
+.red-banner {
+    position: absolute;
+    left: 50%;
+    top: 996/@v;
+    .wh(617,315);
+    // transform: translate(-50%,27/@v);
+    margin-left: -617/2/@v;
+    margin-top: 27/@v;
+    z-index: 2;
+    .p1_font1,
+    .p1_font2,
+    .p2_font {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .p1_font1{
+        .wh(477,208);
+    }
+    .p1_font2{
+        .wh(298,163);
+    }
+    .p2_font {
+        .wh(524,204);
+    }
+    .pull-down {
+        position: absolute;
+        left: 50%;
+        top: 60/@v;
+        width: 10/@v;
+        .p1_6 {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-60%);
+            .wh(27,160);
+        }
+        .p1_7 {
+            position: absolute;
+            left: 50%;
+            margin-left: -44/2/@v;
+            .wh(44,44);
+           
+        }
+    }
+}
+//红旗的调整
+.red-bannerAni {
+    animation: redBanner2 1s linear both;
+}
+@media screen and (max-width:380px) and (max-height:678px){
+    //红旗
+    .red-banner {
+        transform: scale(0.9);
+    }
+    .page-two {
+        transform-origin: (622/2+380)/@v (1039/2-310)/@v;
+    }
+    .red-bannerAni {
+        animation: redBanner3 1s linear both;
+    }
+    //四五页面的适配
+    .page4-page5-box {
+        margin-top: -180/@v;
+    }
+}
+@media screen and (max-width:380px) and (max-height:610px){
+    //红旗
+    .red-banner {
+        transform: scale(0.9);
+    }
+    .page-two {
+        transform-origin: (622/2+380)/@v (1039/2-310)/@v;
+    }
+    .page-two .one-content .timepiece {
+        top: -140/@v;
+    }
+    .page-two .p2_2 {
+        left: -148/@v;
+        top: 560/@v;
+        transform: scale(0.9);
+    }
+    .red-bannerAni {
+        animation: redBanner 1s linear both;
+    }
+    .three-content {
+        height: 50/@v;
+    }
+    //四五页面的适配
+    .page4-page5-box {
+        margin-top: -140/@v;
+    }
+    .page-six {
+        top: 109%;
+        .page-six-bg  {
+            top: 80/@v;
+        }
+        .p5_1 {
+            top: 190/@v;
+        }
+    }
+    //适配费翔人物
+    .page-seven-box {
+        top: 260/@v;
+    }
+    //小崔
+    .conversation {
+        top: -100/@v;
+    }
+}
+@media screen and (min-width:400px) and (max-height:678px){
+    // 红旗
+    .red-banner {
+        transform: scale(0.9);
+    }
+    .page-two {
+        transform-origin: (622/2+380)/@v (1039/2-340)/@v;
+    }
+    .red-bannerAni {
+        animation: redBanner 1s linear both;
+    }
+    .page-two .p2_2 {
+        left: -148/@v;
+        top: 535/@v;
+        transform: scale(0.9);
+    }
+    //四五页面的适配
+    .page4-page5-box {
+        margin-top: -140/@v;
+    }
+     //费翔
+    .page-six {
+        top: (1448 - 140)/@v;
+    }
+}
+@media screen and (min-width:400px) and (min-height:700px){
+    .page-two {
+        transform-origin: (622/2+380)/@v (1039/2+300)/@v;
+    }
+    .page-two .one-content .timepiece {
+        top: 80/@v;
+    }
+    .page-two .p2_2 {
+        left: -148/@v;
+        top: 750/@v;
+        transform: scale(0.9);
+    }
+}
+
+
+.fireworksAni {
+    animation: fireworks 2s linear both;
+}
+.pullDown {
+    animation: movePull 1s linear infinite both;
+}
+
+@keyframes cloudMove1{
+    0% {
+        transform: translateX(200%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(-200%);
+    }
+}
+@keyframes cloudMove2{
+    0% {
+        transform: translateX(150%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(-200%);
+    }
+}
+
+@keyframes fireworks {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes movePull {
+    0% {
+        transform: translateY(250%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+//红旗的调整
+@keyframes redBanner {
+    0% {
+        top: (996+600)/@v;
+        // transform: translateY(996);
+    }
+    100% {
+        // transform: translateY(-100px);
+        top: (996-205)/@v;
+    }
+}
+@keyframes redBanner1 {
+    0% {
+        top: (996+600)/@v;
+        // transform: translateY(600px);
+    }
+    100% {
+        top: (996-190) /@v;
+        // transform: translateY(-90px);
+    }
+}
+@keyframes redBanner2 {
+    0% {
+        top: (996+600)/@v;
+        // transform: translateY(600px);
+    }
+    100% {
+
+        top: (996-160) /@v;
+        // transform: translateY(-80px);
+    }
+}
+@keyframes redBanner3 {
+    0% {
+        top: (996+600)/@v;
+        // transform: translateY(600px);
+    }
+    100% {
+
+        top: (996-60) /@v;
+        // transform: translateY(-80px);
+    }
+}
+//做调试,首先将第二个页面布置好,然后调整第一个页面的层级,还要调整当前页面的透明度,让上一个页面的能够在当前页面显示
+//通过调整transform-origin来调整放大的位置
